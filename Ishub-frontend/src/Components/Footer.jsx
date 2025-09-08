@@ -18,7 +18,7 @@ function Footer() {
           <div className="column">
             <h4>About</h4>
             <ul>
-              <li><a href="/mentors">Mentors</a></li>
+              <li><a href="/Mentors">Mentors</a></li>
               <li><a href="/">Home</a></li>
               <li><a href="/Community">Announcements</a></li>
             </ul>

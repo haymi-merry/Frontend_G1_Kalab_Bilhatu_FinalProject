@@ -13,7 +13,7 @@ function Login({ onLogin }) {
       const fetchQuote = async () => {
         try {
           const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers', {
-            headers: { 'X-Api-Key': 'YOUR_API_KEY' }
+          
           });
           const data = await res.json();
           if (data[0]?.quote && data[0]?.author) {
@@ -23,7 +23,6 @@ function Login({ onLogin }) {
           console.error("Failed to fetch the quote", err);
         }
       };
-
       fetchQuote();
       const interval = setInterval(fetchQuote, 4000);
       return () => clearInterval(interval);

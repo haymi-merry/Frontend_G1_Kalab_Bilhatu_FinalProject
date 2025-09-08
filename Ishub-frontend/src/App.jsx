@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Home from './Components/Home';
 import Login from './Components/Login';
 import Community from './Components/Community';
 import Footer from './Components/Footer';
@@ -17,7 +16,7 @@ function App() {
     <>
       {isLoggedIn ? (
        <> 
-       <Home />
+       
        <Courses/>
       <Profile/>
        <Community/>

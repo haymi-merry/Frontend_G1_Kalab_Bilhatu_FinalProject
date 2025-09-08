@@ -8,8 +8,7 @@ function Profile(){
       
       {/* Header */}
       <header className="profile-header">
-        <div className="logo">IS Hub Frontend</div>
-        <button className="settings-button" aria-label="Settings">⚙️</button>
+        <div className="logo">IS Hub Frontend  Profile</div>
       </header>
 
       <main className="profile-main">

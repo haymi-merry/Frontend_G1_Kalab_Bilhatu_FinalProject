@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Community.css";
 import logo from '../assets/ishublogo.jpg';
 import img2 from '../assets/img2.jpg';
@@ -14,8 +14,7 @@ const tabs = [
   'Tips & Resources',
   'memes'
 ];
-
-const posts = [
+const initialPosts = [
   {
     id: 1,
     avatar: logo,
@@ -52,10 +51,16 @@ const posts = [
     likes: 30,
     comments: 74,
   },
-  
 ];
-
 function Community() {
+  const [posts, setPosts] = useState(initialPosts);
+
+  const handleLike = (id) => {
+    const updatedPosts = posts.map(post =>
+      post.id === id ? { ...post, likes: post.likes + 1 } : post
+    );
+    setPosts(updatedPosts);
+  };
   return (
     <div className="community-page">
       {/* Header  */}
@@ -65,17 +70,14 @@ function Community() {
           <input type="text" placeholder="Search ..." />
         </div>
       </header>
-
 {/* Title */}
       <h1 className="title">Community</h1>
-
 {/* Tabs */}
       <nav className="tabs">
         {tabs.map((tab, index) => (
           <button key={index}>{tab}</button>
         ))}
       </nav>
-
 {/* Posts */}
       <section className="posts">
         {posts.map((post) => (
@@ -86,7 +88,9 @@ function Community() {
               <p>{post.content}</p>
               <div className="info">
                 <span>{post.time}</span>
-                <span>{post.likes} ❤️</span>
+                <button onClick={() => handleLike(post.id)}>
+                  {post.likes} ❤️
+                </button>
                 <span>{post.comments} 💬</span>
               </div>
             </div>

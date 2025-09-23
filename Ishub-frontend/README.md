@@ -1,35 +1,31 @@
-project title iS Hub Frontend  
+# Summer Bootcamp 2025 – Final Project (Frontend Track)
 
- iS Hub Frontend is a web-based platform developed for frontend students at iS Hub. It provides access to course materials such as videos and notes, and offers a space for students to participate in community discussions. Users can ask questions to mentors, share insights, and track their progress throughout the bootcamp. The platform is designed to encourage collaboration, provide academic support, and promote continuous learning.
+👋 Welcome to your final project repository!  
+Please read the instructions carefully before starting.
 
-Features
+---
 
-Access to course materials including videos and notes
+## 📘 Student Info
+- **Full Name:** [Your Full Name]
+- **Group:** G[1/2/3/...]
+- **Track:** Frontend
 
-Community feed for discussions and questions
+---
 
-Direct interaction with mentors for guidance
+## 🚀 Instructions
+1. Add all your source code inside the `src/` folder.
+2. Update this `README.md` with:
+   - Project title
+   - Short description
+   - Features
+   - How to run your project (setup + commands)
+   - Screenshots or demo link (if any)
 
-Progress tracking system for students
+---
 
-Search functionality to find relevant content
-
-Responsive and modern user interface
-
-
-To run on your devices
-install nodejs
-Clone the repository by using these commands
-
-
-git clone https://github.com/ISHUBTEAM/Frontend_G1_Kalab_Bilhatu_FinalProject.git
-cd Frontend_G1_Kalab_Bilhatu_FinalProject
-npm install
-
-Start the development server
-
-npm run dev
-
-Open your browser and go to:
-
-http://localhost:5173/
+## ✅ Submission Rules
+- Push your project code to this repository.  
+- Mark your final version by tagging:
+  ```bash
+  git tag v1.0-final
+  git push origin v1.0-final

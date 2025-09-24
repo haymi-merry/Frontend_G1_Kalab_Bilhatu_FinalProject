@@ -24,7 +24,7 @@ const mentors = [
     name: "Fethia Abdurehim",
     role: "Fullstack developer",
     description: "Simplifying the Complex in Frontend Education",
-    location: "Harar",
+    location: "Addis Ababa",
     sessions: "11.5 sessions",
     image: feti
   }
